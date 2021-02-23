@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Basic Template Starter",
+    title: "developedByCarlos Web Site",
     author: "@CarlosBarros",
     contact: "carlosbwebdev@gmail.com",
   },
@@ -20,10 +20,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
-        //   singleType : `about`
-        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
+        queryLimit: 1000,
         contentTypes: [],
         singleTypes: [],
       },

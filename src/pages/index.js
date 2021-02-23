@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 export default () => {
   return (
     <Layout>
-      <h1>Basic Starter Template</h1>
+      <h1>Welcome to My Web Site</h1>
     </Layout>
   );
 };
