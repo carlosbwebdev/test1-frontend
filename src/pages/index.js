@@ -1,9 +1,14 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
+import Hero from "../components/hero";
+import Services from "../components/services";
+// import Sidebar from "./sidebar";
+// import Footer from "./footer";
 export default () => {
   return (
     <Layout>
-      <h1>Welcome to developedByCarlos Web Site</h1>
+      <Hero />
+      <Services />
     </Layout>
   );
 };

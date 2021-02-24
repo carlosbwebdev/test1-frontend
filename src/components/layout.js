@@ -1,9 +1,13 @@
 import React from "react";
-// import Navbar from "./Navbar";
-// import Sidebar from "./Sidebar";
-// import Footer from "./Footer";
+import "../css/layout.css";
+import Navbar from "./navbar";
 const Layout = ({ children }) => {
-  return <>{children}</>;
+  return (
+    <>
+      <Navbar />
+      {children}
+    </>
+  );
 };
 
 export default Layout;
