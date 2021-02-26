@@ -1,14 +1,12 @@
 import React from "react";
-import Layout from "../components/layout";
-import Hero from "../components/hero";
-import Services from "../components/services";
 import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
-// import Sidebar from "./sidebar";
-// import Footer from "./footer";
+import Layout from "../components/layout";
+import styles from "../css/allblogs.module.css";
+
 export const query = graphql`
   {
-    allStrapiBlogs(limit: 3, sort: { fields: id, order: DESC }) {
+    allStrapiBlogs {
       nodes {
         slug
         title
@@ -29,15 +27,18 @@ export const query = graphql`
   }
 `;
 
-export default ({ data }) => {
-  const {
+const Blog = ({
+  data: {
     allStrapiBlogs: { nodes: blogs },
-  } = data;
+  },
+}) => {
   return (
     <Layout>
-      <Hero />
-      <Services />
-      <Blogs blogs={blogs} title="latests articles" showLink />
+      <section className={styles.blogPages}>
+        <Blogs blogs={blogs} title="blog" />
+      </section>
     </Layout>
   );
 };
+
+export default Blog;
