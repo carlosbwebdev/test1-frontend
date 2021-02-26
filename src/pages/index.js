@@ -5,7 +5,6 @@ import Services from "../components/services";
 import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
 // import Sidebar from "./sidebar";
-// import Footer from "./footer";
 export const query = graphql`
   {
     allStrapiBlogs(limit: 3, sort: { fields: id, order: DESC }) {
