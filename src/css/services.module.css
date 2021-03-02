@@ -16,14 +16,14 @@
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.service:hover {
+/* .service:hover {
   background: var(--clr-primary-2);
   color: var(--clr-bg-1);
-}
-.service:hover p {
+} */
+/* .service:hover p {
   color: var(--clr-bg-1);
   font-weight: 200;
-}
+} */
 
 @media screen and (min-width: 676px) {
   .servicesCenter {

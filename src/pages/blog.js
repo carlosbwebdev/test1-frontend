@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
 import Layout from "../components/layout";
-import styles from "../css/allblogs.module.css";
 
 export const query = graphql`
   {
@@ -27,18 +26,18 @@ export const query = graphql`
   }
 `;
 
-const Blog = ({
+const BlogPage = ({
   data: {
     allStrapiBlogs: { nodes: blogs },
   },
 }) => {
   return (
     <Layout>
-      <section className={styles.blogPages}>
+      <section>
         <Blogs blogs={blogs} title="blog" />
       </section>
     </Layout>
   );
 };
 
-export default Blog;
+export default BlogPage;
