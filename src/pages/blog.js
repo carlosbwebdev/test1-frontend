@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
 import Layout from "../components/layout";
+import styles from "../css/blogs-page.module.css";
 
 export const query = graphql`
   {
@@ -33,7 +34,7 @@ const BlogPage = ({
 }) => {
   return (
     <Layout>
-      <section>
+      <section className={styles.blogsPage}>
         <Blogs blogs={blogs} title="blog" />
       </section>
     </Layout>

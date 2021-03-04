@@ -1,5 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap"); /* VARIABLES */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap"); */
+/*
+=============== 
+Variables
+===============
+*/
 :root {
   /* colors */
   --clr-primary-1: hsl(0, 0%, 35%);
@@ -10,7 +15,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   /* font */
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: "Poppins", sans-serif;
   --ff-logo: "Michroma", sans-serif;
   /* global */
   --transition: all 0.2s linear;
@@ -29,7 +34,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--ff-primary);
   background: white;
   line-height: 1.5;
   font-size: 0.875rem;
@@ -65,7 +70,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: rgb(109, 106, 106);
+  color: var(--clr-primary-1);
 }
 @media screen and (min-width: 800px) {
   h1 {

@@ -6,7 +6,7 @@
 @media screen and (min-width: 576px) {
   .projectsCenter {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
     column-gap: 2rem;
   }
 }

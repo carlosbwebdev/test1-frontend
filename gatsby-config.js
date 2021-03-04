@@ -26,5 +26,30 @@ module.exports = {
         singleTypes: [`about`],
       },
     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["300", "400", "500"],
+            },
+            {
+              family: "Open Sans Condensed",
+              variants: ["300", "700"],
+            },
+            // {
+            //   family: "Poppins",
+            //   variants: ["100", "200", "300", "400", "500", "600", "700"],
+            // },
+            {
+              family: "Michroma",
+              variants: ["400"],
+            },
+          ],
+        },
+      },
+    },
   ],
 };
