@@ -4,14 +4,15 @@ import Links from "../constants/links";
 import SocialLinks from "../constants/socialLinks";
 import { FaTimes } from "react-icons/fa";
 import styles from "../css/sidebar.module.css";
+import ReactDOM from "react-dom";
+import Layout from "../components/layout";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
-  const jsdom = require("jsdom");
-  global.document = new JSDOM(html).window.document;
-
-  if (!isOpen) {
-    global.document.body.style.overflow = "auto";
-  }
+  // if (!isOpen) {
+  //   ReactDOM.render(
+  //     (document.getElementsByTagName("body").style.overflow = "hidden")
+  //   );
+  // }
 
   return (
     <aside className={`${styles.sidebar} ${isOpen ? styles.showSidebar : ""}`}>

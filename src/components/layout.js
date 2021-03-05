@@ -3,16 +3,16 @@ import "../css/layout.css";
 import Navbar from "./navbar";
 import Sidebar from "../components/sidebar";
 import Footer from "../components/footer";
+import ReactDOM from "react-dom";
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleSidebar = () => {
-    const jsdom = require("jsdom");
-    global.document = new JSDOM(html).window.document;
     setIsOpen(!isOpen);
-    if (setIsOpen) {
-      global.document.body.style.overflow = "hidden";
-    }
+    // const element = <body></body>;
+    // if (!isOpen) {
+    //   ReactDOM.render(element, document.getElementById("body"));
+    // }
   };
 
   return (
