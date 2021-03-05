@@ -14,7 +14,7 @@
 .navCenter {
   width: 90vw;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: auto;
 }
 .navHeader {
   display: flex;
@@ -23,7 +23,7 @@
 }
 
 .toggleBtn {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
   color: var(--clr-primary-2);
@@ -41,7 +41,7 @@
   color: var(--clr-primary-2);
   font-family: var(--ff-logo);
   font-weight: bold;
-  font-size: 1.45rem;
+  font-size: 1.1rem;
   position: relative;
   top: 0.2rem;
   text-transform: none;
