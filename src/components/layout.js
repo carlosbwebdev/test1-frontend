@@ -7,6 +7,8 @@ import Footer from "../components/footer";
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleSidebar = () => {
+    const jsdom = require("jsdom");
+    global.document = new JSDOM(html).window.document;
     setIsOpen(!isOpen);
     if (setIsOpen) {
       global.document.body.style.overflow = "hidden";

@@ -6,6 +6,9 @@ import { FaTimes } from "react-icons/fa";
 import styles from "../css/sidebar.module.css";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  const jsdom = require("jsdom");
+  global.document = new JSDOM(html).window.document;
+
   if (!isOpen) {
     global.document.body.style.overflow = "auto";
   }
