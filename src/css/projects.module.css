@@ -17,6 +17,11 @@
   max-width: 1170px;
 }
 
+.section {
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+}
+
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-2);
