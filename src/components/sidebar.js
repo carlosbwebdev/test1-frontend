@@ -7,7 +7,7 @@ import styles from "../css/sidebar.module.css";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   if (!isOpen) {
-    document.body.style.overflow = "auto";
+    global.document.body.style.overflow = "auto";
   }
 
   return (

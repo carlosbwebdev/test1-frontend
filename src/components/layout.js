@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
     if (setIsOpen) {
-      document.body.style.overflow = "hidden";
+      global.document.body.style.overflow = "hidden";
     }
   };
 
