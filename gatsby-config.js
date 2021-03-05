@@ -3,6 +3,7 @@ module.exports = {
     title: "developedByCarlos Web Site",
     author: "@CarlosBarros",
     contact: "carlosbwebdev@gmail.com",
+    siteUrl: "https://needstobetheproductionurl.com",
   },
   plugins: [
     `gatsby-transformer-sharp`,
