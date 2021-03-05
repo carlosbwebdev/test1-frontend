@@ -55,7 +55,6 @@ export default ({ data }) => {
       <Hero />
       <Services />
       <Projects projects={projects} title="featured projects" showLink />
-
       <Blogs blogs={blogs} title="latests articles" showLink />
     </Layout>
   );

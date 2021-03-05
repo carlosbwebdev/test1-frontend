@@ -6,6 +6,10 @@ import { FaTimes } from "react-icons/fa";
 import styles from "../css/sidebar.module.css";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+  if (!isOpen) {
+    document.body.style.overflow = "auto";
+  }
+
   return (
     <aside className={`${styles.sidebar} ${isOpen ? styles.showSidebar : ""}`}>
       <button className={styles.closeBtn} onClick={toggleSidebar}>

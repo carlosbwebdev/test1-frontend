@@ -8,7 +8,11 @@ const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+    if (setIsOpen) {
+      document.body.style.overflow = "hidden";
+    }
   };
+
   return (
     <>
       <Navbar toggleSidebar={toggleSidebar} />
