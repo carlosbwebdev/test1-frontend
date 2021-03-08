@@ -5,7 +5,7 @@ import Services from "../components/services";
 import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
 import Projects from "../components/projects";
-// import Sidebar from "./sidebar";
+import SEO from "../components/SEO";
 export const query = graphql`
   {
     allStrapiBlogs(limit: 3, sort: { fields: id, order: DESC }) {
@@ -52,6 +52,7 @@ export default ({ data }) => {
   } = data;
   return (
     <Layout>
+      <SEO title="Home" />
       <Hero />
       <Services />
       <Projects projects={projects} title="featured projects" showLink />

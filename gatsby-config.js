@@ -1,9 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: "developedByCarlos Web Site",
+    title: "developedByCarlos Website",
     author: "@CarlosBarros",
     contact: "carlosbwebdev@gmail.com",
-    siteUrl: "https://needstobetheproductionurl.com",
+    description:
+      "freelance web designer and developer, based in north of portugal",
+    siteUrl: "https://developedbycarlos.netlify.app",
+    image: "/twitter-card.png",
+    twitterUsername: "@Carlos_webdev",
   },
   plugins: [
     `gatsby-transformer-sharp`,
