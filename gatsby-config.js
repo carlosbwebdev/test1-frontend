@@ -4,7 +4,7 @@ module.exports = {
     author: "@CarlosBarros",
     contact: "carlosbwebdev@gmail.com",
     description:
-      "freelance web designer and developer, based in north of portugal",
+      "Freelance web designer and developer, based in north of portugal",
     siteUrl: "https://developedbycarlos.netlify.app",
     image: "/twitter-card.png",
     twitterUsername: "@Carlos_webdev",
@@ -27,6 +27,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `https://app01test.herokuapp.com`,
+        // apiURL: `http://localhost:1337`,
         queryLimit: 5000,
         contentTypes: [`blogs`, `projects`],
         singleTypes: [`about`],

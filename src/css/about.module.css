@@ -34,15 +34,19 @@
     padding-bottom: 3rem;
     padding-top: 2rem;
   }
-  .aboutImg {
+  /* .aboutImg {
     display: block;
     grid-column: 1 / 5;
     border-radius: 4rem;
-  }
+  } */
   .aboutText {
     position: relative;
     bottom: 2rem;
-    grid-column: 6 / -1;
+    grid-column: 1/ -1;
     text-align: justify;
+  }
+
+  img {
+    width: 60rem;
   }
 }

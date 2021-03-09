@@ -2,7 +2,9 @@ import React from "react";
 import Layout from "../components/layout";
 import styles from "../css/about.module.css";
 import Title from "../components/title";
-import Image from "gatsby-image";
+import ReactMarkdown from "react-markdown";
+
+// import Image from "gatsby-image";
 
 export const query = graphql`
   {
@@ -14,13 +16,6 @@ export const query = graphql`
         }
         title
         description
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
@@ -36,13 +31,13 @@ const about = ({
     <Layout>
       <section className={styles.aboutPage}>
         <div className={`${styles.sectionCenter} ${styles.aboutCenter}`}>
-          <Image
+          {/* <Image
             fluid={image.childImageSharp.fluid}
             className={styles.aboutImg}
-          />
+          /> */}
           <article className={styles.aboutText}>
             <Title title={title} className={styles.title} />
-            <p>{description}</p>
+            <ReactMarkdown source={description} />
           </article>
         </div>
       </section>
