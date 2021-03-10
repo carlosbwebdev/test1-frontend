@@ -3,7 +3,6 @@
   padding-top: 5rem;
   height: 100vh;
   background: var(--clr-bg-1);
-  position: relative;
 }
 .heroCenter {
   width: 90vw;
@@ -13,22 +12,31 @@
   align-items: center;
   margin: 0 auto;
 }
-.hero .underline {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
 .underline {
-  width: 5rem;
-  height: 0.25rem;
-  margin-bottom: 1.25rem;
+  width: 2.2rem;
+  height: 2.2rem;
   background: var(--clr-primary-2);
-  margin-left: auto;
-  margin-right: auto;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 0;
+  --translateX: -0.7rem;
+  --translateY: -0.5rem;
+  --rotate: 0deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY))
+    rotate(var(--rotate));
 }
+.heroCenter h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 3.9rem;
+  font-style: italic;
+  text-align: unset;
+}
+
 .heroImg {
   display: none;
   border-radius: 2rem;
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 
 .heroInfo h4 {
@@ -66,6 +74,22 @@
 .btn:focus {
   border: 1px solid white !important; /* here configure as your needs */
   color: #f6f6f6;
+}
+@media screen and (min-width: 798px) {
+  .underline {
+    width: 3rem;
+    height: 3rem;
+    background: var(--clr-primary-2);
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+    --translateX: -1.4rem;
+    --translateY: -1.5rem;
+    --rotate: 0deg;
+    transform: translateX(var(--translateX)) translateY(var(--translateY))
+      rotate(var(--rotate));
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 992px) {

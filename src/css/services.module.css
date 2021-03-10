@@ -28,11 +28,20 @@
   transform: scale(1.02);
   box-shadow: var(--dark-shadow);
 }
-/*
-.service:hover p {
-  color: var(--clr-primary-1);
-  font-weight: 300;
-} */
+
+.underline {
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-primary-2);
+  opacity: 0.7;
+  position: absolute;
+  right: 50%;
+  --translateX: -4.3rem;
+  --translateY: -0.9rem;
+  --rotate: 0deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY))
+    rotate(var(--rotate));
+}
 
 @media screen and (min-width: 676px) {
   .servicesCenter {

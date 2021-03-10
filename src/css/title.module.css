@@ -7,4 +7,7 @@
 
 .sectionTitle h2 {
   font-size: 2rem;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
 }

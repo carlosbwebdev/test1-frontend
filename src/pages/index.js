@@ -55,8 +55,8 @@ export default ({ data }) => {
       <SEO title="Home" />
       <Hero />
       <Services />
-      <Projects projects={projects} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="latests articles" showLink />
+      <Projects projects={projects} title="projects" subTitle showLink />
+      <Blogs blogs={blogs} title="blog" subTitle showLink />
     </Layout>
   );
 };

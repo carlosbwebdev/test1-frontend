@@ -17,7 +17,7 @@ const BlogTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <section className={styles.blogTemplate}>
+      <section className={styles.blogTemplate} id="blogTemplateDark">
         <div className={styles.sectionCenter}>
           <article className={styles.blogContent}>
             <ReactMarkdown source={content} />

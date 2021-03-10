@@ -3,8 +3,8 @@ import styles from "../css/title.module.css";
 
 const Title = ({ title }) => {
   return (
-    <div className={styles.sectionTitle}>
-      <h2>{title || "default title"}</h2>
+    <div className={styles.sectionTitle} id="titleDark">
+      <h2>{title}</h2>
     </div>
   );
 };

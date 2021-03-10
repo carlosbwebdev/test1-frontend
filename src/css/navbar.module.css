@@ -45,6 +45,7 @@
   position: relative;
   top: 0.2rem;
   text-transform: none;
+  font-style: normal;
 }
 
 /* styles for bigger screens */

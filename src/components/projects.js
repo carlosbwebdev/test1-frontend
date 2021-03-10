@@ -5,11 +5,13 @@ import Blog from "./blog";
 import Project from "../components/project";
 import { Link } from "gatsby";
 
-export const Projects = ({ projects, title, showLink }) => {
-  console.log(projects);
+export const Projects = ({ projects, title, subTitle, showLink }) => {
   return (
     <div className={styles.section}>
+      <div className={styles.underline}></div>
       <Title title={title} />
+      {subTitle && <h4 className={styles.subtitle}>Featured Projects</h4>}
+
       <div className={`${styles.sectionCenter} ${styles.projectsCenter}`}>
         {projects.map((project) => {
           return <Project key={project.id} {...project} />;

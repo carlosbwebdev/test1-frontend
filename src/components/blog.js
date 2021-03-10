@@ -6,13 +6,16 @@ import ProTypes from "prop-types";
 const Blog = ({ id, title, image, date, category, slug, desc }) => {
   return (
     <Link to={`/blogs/${slug}`} className={styles.blog} key={id}>
-      <article>
-        <Image fluid={image.childImageSharp.fluid} className={styles.blogImg} />
+      <article id="blogDark">
+        <Image
+          fluid={image.childImageSharp.fluid}
+          className={`${styles.blogImg} ${"imgDark"}`}
+        />
         <div className={styles.blogCard}>
           <h4>{title}</h4>
           <p>{desc}</p>
           <div className={styles.blogFooter}>
-            <p>{category}</p>
+            <p className="blogDarkCat">{category}</p>
             <p>{date}</p>
           </div>
         </div>

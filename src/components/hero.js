@@ -25,16 +25,17 @@ const Hero = () => {
     },
   } = useStaticQuery(query);
   return (
-    <header className={styles.hero}>
+    <header className={styles.hero} id="herodark">
       <div className={`styles.sectionCenter ${styles.heroCenter}`}>
         <article className={styles.heroInfo}>
           <div>
             <div className={styles.underline}></div>
             <h1>i am Carlos!</h1>
-            <h4>
-              freelance web designer and developer, based in north of portugal
+            <h4 id="heroinfo">
+              freelance web designer and developer, based in the north of
+              portugal
             </h4>
-            <Link to="/contact" className={styles.btn}>
+            <Link to="/contact" className={styles.btn} id="btnDarkHover">
               contact me
             </Link>
             <SocialLinks />

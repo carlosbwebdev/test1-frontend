@@ -32,7 +32,13 @@ const data = [
 const tempLinks = data.map((link) => {
   return (
     <li key={link.id}>
-      <Link activeStyle={{ color: "rgb(236, 105, 85" }} to={link.url}>
+      <Link
+        activeStyle={{ color: "rgb(236, 105, 85" }}
+        style={{
+          color: "var(--textNormal)",
+        }}
+        to={link.url}
+      >
         {link.text}
       </Link>
     </li>

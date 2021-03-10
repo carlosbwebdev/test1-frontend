@@ -29,13 +29,10 @@ const about = ({
   const { description, stack, title, image } = nodes[0];
   return (
     <Layout>
-      <section className={styles.aboutPage}>
+      <section className={styles.aboutPage} id="aboutPageDark">
         <div className={`${styles.sectionCenter} ${styles.aboutCenter}`}>
-          {/* <Image
-            fluid={image.childImageSharp.fluid}
-            className={styles.aboutImg}
-          /> */}
           <article className={styles.aboutText}>
+            <div className={styles.underline}></div>
             <Title title={title} className={styles.title} />
             <ReactMarkdown source={description} />
           </article>

@@ -30,8 +30,8 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
-      <section className={styles.projectsPage}>
-        <Projects projects={projects} title="all projects" />
+      <section className={styles.projectsPage} id="projectDarkPage">
+        <Projects projects={projects} title="Projects" id="opa" />
       </section>
     </Layout>
   );

@@ -49,3 +49,25 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.underline {
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-primary-2);
+  opacity: 0.7;
+  position: absolute;
+  right: 50%;
+  --translateX: -1.8rem;
+  --translateY: 4.1rem;
+  --rotate: 0deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY))
+    rotate(var(--rotate));
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  position: relative;
+  bottom: 1.4rem;
+}
