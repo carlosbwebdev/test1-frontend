@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        // apiURL: `https://app01test.herokuapp.com`,
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://app01test.herokuapp.com`,
+        // apiURL: `http://localhost:1337`,
         queryLimit: 5000,
         contentTypes: [`blogs`, `projects`],
         singleTypes: [`about`],
