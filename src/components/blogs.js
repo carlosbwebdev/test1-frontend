@@ -10,7 +10,7 @@ export const Blogs = ({ blogs, title, subTitle, showLink }) => {
     <section
       className={styles.section}
       style={{
-        background: "var(--bg)",
+        background: "var(--bg4)",
         color: "var(--textNormal)",
       }}
     >
