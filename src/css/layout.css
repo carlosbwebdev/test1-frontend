@@ -171,14 +171,54 @@ p {
 /* DARK MODE */
 body.dark {
   background: #222831;
-  color: #ececec;
+  color: #999898;
   -webkit-font-smoothing: antialiased;
   --bg: #222831;
+  --bg4: #171b22;
   --boxbg: #30475e;
-  --textNormal: #ececec;
+  --textNormal: #999898;
   animation-delay: 0.5ms;
   box-sizing: border-box;
 }
+.darkModeBtn {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .darkModeBtn {
+    /* position: relative;
+    right: 3rem; */
+    margin-left: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  .control-me::after {
+    content: "🌑";
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1.7rem;
+    right: 0.5rem;
+    z-index: 0;
+  }
+  #toggle:checked ~ .control-me::after {
+    content: "🌕";
+  }
+
+  label {
+    position: relative;
+    opacity: 0;
+    background: #a5d6a7;
+    /* padding: 0rem; */
+    z-index: 1;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    left: -100vw;
+  }
+}
+
+/* NAVBAR */
 
 body.dark #navbarDark {
   background-color: var(--bg);
@@ -188,7 +228,7 @@ body.dark #navbarDark {
 /* hero */
 
 body.dark #herodark {
-  background-color: var(--bg);
+  background-color: var(--bg4);
   color: var(--textNormal);
 }
 body.dark #heroinfo {
@@ -230,7 +270,7 @@ body.dark #serviceDark {
   background-color: #30475e;
 }
 body.dark #serviceDark p {
-  color: #ececec;
+  color: #999898;
 }
 body.dark #blogDark {
   background-color: #30475e;
@@ -242,7 +282,7 @@ body.dark #blogDark h4 {
   font-size: 1.1rem;
 }
 body.dark #blogDark p {
-  color: #ececec;
+  color: #999898;
 }
 body.dark #blogDark .blogDarkCat {
   color: black;
@@ -250,7 +290,7 @@ body.dark #blogDark .blogDarkCat {
 
 body.dark #projectDarkPage {
   background-color: #222831;
-  color: #f6f6f6;
+  color: #999898;
 }
 
 body.dark #projectDark .gatsby-image-wrapper {
@@ -259,23 +299,23 @@ body.dark #projectDark .gatsby-image-wrapper {
 
 body.dark #blogTemplateDark {
   background-color: #222831;
-  color: #f6f6f6;
+  color: #999898;
 }
 body.dark #blogTemplateDark p {
-  color: #f6f6f6;
+  color: #999898;
 }
 
 body.dark #titleDark {
-  color: #f6f6f6;
+  color: #999898;
 }
 
 body.dark #aboutPageDark {
   background-color: #222831;
-  color: #f6f6f6;
+  color: #999898;
 }
 body.dark #aboutPageDark {
   color: #30475e;
 }
 body.dark #aboutPageDark p {
-  color: #f6f6f6;
+  color: #999898;
 }
