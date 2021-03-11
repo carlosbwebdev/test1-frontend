@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../css/navbar.module.css";
 import { FaAlignRight } from "react-icons/fa";
 import PageLinks from "../constants/links";
-import { ThemeToggler } from "gatsby-plugin-dark-mode";
+import DarkMode from "../components/darkMode";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -19,23 +19,10 @@ const Navbar = ({ toggleSidebar }) => {
           >
             <FaAlignRight></FaAlignRight>
           </button>
-          <ThemeToggler>
-            {({ theme, toggleTheme }) => (
-              <label styleClass={styles.navLinks}>
-                <input
-                  type="checkbox"
-                  onChange={(e) =>
-                    toggleTheme(e.target.checked ? "dark" : "light")
-                  }
-                  checked={theme === "dark"}
-                />{" "}
-              </label>
-            )}
-          </ThemeToggler>
         </div>
-
         <PageLinks styleClass={styles.navLinks}></PageLinks>
       </div>
+      <DarkMode />
     </nav>
   );
 };

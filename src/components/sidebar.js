@@ -4,8 +4,7 @@ import Links from "../constants/links";
 import SocialLinks from "../constants/socialLinks";
 import { FaTimes } from "react-icons/fa";
 import styles from "../css/sidebar.module.css";
-// import ReactDOM from "react-dom";
-// import Layout from "../components/layout";
+import DarkMode from "../components/darkMode";
 import disableScroll from "disable-scroll";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {

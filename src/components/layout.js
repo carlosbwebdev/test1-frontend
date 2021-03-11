@@ -3,7 +3,7 @@ import "../css/layout.css";
 import Navbar from "./navbar";
 import Sidebar from "../components/sidebar";
 import Footer from "../components/footer";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import disableScroll from "disable-scroll";
 import favicon from "../assets/dC.ico";
 import Helmet from "react-helmet";
