@@ -10,6 +10,10 @@
   z-index: 200;
   background: white;
 }
+.darkModeBtn {
+  position: relative;
+  right: 10%;
+}
 
 .navCenter {
   width: 90vw;
@@ -73,7 +77,7 @@
     color: var(--clr-primary-1);
     font-weight: 600;
     letter-spacing: 0.2rem;
-    transition: all 0.2s linear;
+    /* transition: all 0.2s linear; */
     padding: 0.5rem 0;
   }
   .navLinks a:hover {

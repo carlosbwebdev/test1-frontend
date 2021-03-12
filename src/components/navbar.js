@@ -22,7 +22,7 @@ const Navbar = ({ toggleSidebar }) => {
         </div>
         <PageLinks styleClass={styles.navLinks}></PageLinks>
       </div>
-      <DarkMode />
+      <DarkMode styleClass={styles.darkModeBtn} />
     </nav>
   );
 };
