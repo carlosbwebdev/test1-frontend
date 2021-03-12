@@ -28,7 +28,7 @@ import "../css/DarkMode.css";
 
 const DarkMode = () => {
   let clickedClass = "clicked";
-  const body = document.body;
+  const body = window.body;
   const lightTheme = "light";
   const darkTheme = "dark";
   let theme;
