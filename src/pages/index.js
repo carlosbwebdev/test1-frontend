@@ -6,6 +6,7 @@ import { graphql } from "gatsby";
 import Blogs from "../components/blogs";
 import Projects from "../components/projects";
 import SEO from "../components/SEO";
+import Skills from "../components/skills";
 export const query = graphql`
   {
     allStrapiBlogs(limit: 3, sort: { fields: id, order: DESC }) {
@@ -56,6 +57,7 @@ export default ({ data }) => {
       <Hero />
       <Services />
       <Projects projects={projects} title="projects" subTitle showLink />
+      <Skills />
       <Blogs blogs={blogs} title="blog" subTitle showLink />
     </Layout>
   );
