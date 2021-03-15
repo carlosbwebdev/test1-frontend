@@ -1,0 +1,36 @@
+.section {
+  padding-bottom: 4rem;
+  padding-top: 0.1rem;
+  width: 100%;
+  margin: 0 auto;
+  /* max-width: 1170px; */
+  background: var(--clr-bg-1);
+}
+
+.underline {
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-primary-2);
+  opacity: 0.7;
+  position: absolute;
+  right: 50%;
+  --translateX: -2.3rem;
+  --translateY: 3.9rem;
+  --rotate: 0deg;
+  transform: translateX(var(--translateX)) translateY(var(--translateY))
+    rotate(var(--rotate));
+}
+
+.sectionCenter {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  display: grid;
+  grid-gap: 0.5rem;
+}
