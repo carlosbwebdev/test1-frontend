@@ -4,8 +4,9 @@
 }
 .sectionCenter {
   width: 90vw;
-  margin: auto;
-  max-width: 1170px;
+  margin: 0 auto;
+  max-width: 1177px;
+  padding-bottom: 5rem;
 }
 
 .underline {
@@ -21,54 +22,62 @@
   transform: translateX(var(--translateX)) translateY(var(--translateY))
     rotate(var(--rotate));
 }
-.sectionCenter h1,
-h2 {
-  text-align: center;
-}
-.aboutCenter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  justify-content: center;
-  align-self: center;
+.aboutText {
+  padding-top: 0.1rem;
+  padding-bottom: 1rem;
 }
 
-.aboutText {
+.desc {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: auto;
+}
+
+/* .aboutText .desc {
+  grid-row: 2/3;
+} */
+
+.aboutText p:first-of-type {
   grid-column: 1/-1;
 }
-/* .underline {
-  width: 2rem;
-  height: 2rem;
-  background: var(--clr-primary-2);
-  opacity: 0.7;
-  position: absolute;
-  right: 50%;
-  --translateX: -4.5rem;
-  --translateY: 3.8rem;
-  --rotate: 0deg;
-  transform: translateX(var(--translateX)) translateY(var(--translateY))
-    rotate(var(--rotate));
+/* .aboutText p:last-of-type {
+  grid-column: 2/-1;
 } */
-.aboutText img {
-  width: 80%;
-  object-fit: cover;
-  background-position: center;
-  position: relative;
-  left: 10%;
-}
 
-.aboutText {
+img {
+  margin: auto;
+  width: 60%;
+  object-fit: cover;
   position: relative;
-  bottom: 4rem;
+  left: 5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .sectionCenter {
-    width: 90vw;
+  .desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .aboutText .desc {
+    grid-row: 2/3;
+  }
+
+  .aboutText p:first-of-type {
+    grid-column: 1/2;
+  }
+  .aboutText p:last-of-type {
+    grid-column: 2/-1;
   }
 }
-
-/* @media screen and (min-width: 300px) {
-  
-} */
