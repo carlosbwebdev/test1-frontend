@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../css/navbar.module.css";
 import { FaAlignRight } from "react-icons/fa";
 import PageLinks from "../constants/links";
-import DarkMode from "../components/darkMode";
+// import DarkMode from "../components/darkMode";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -22,7 +22,7 @@ const Navbar = ({ toggleSidebar }) => {
         </div>
         <PageLinks styleClass={styles.navLinks}></PageLinks>
       </div>
-      <DarkMode styleClass={styles.darkModeBtn} />
+      {/* <DarkMode styleClass={styles.darkModeBtn} /> */}
     </nav>
   );
 };
