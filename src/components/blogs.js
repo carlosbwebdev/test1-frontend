@@ -7,13 +7,7 @@ import styles from "../css/blogs.module.css";
 export const Blogs = ({ blogs, title, subTitle, showLink }) => {
   console.log(blogs);
   return (
-    <section
-      className={styles.section}
-      style={{
-        background: "var(--bg4)",
-        color: "var(--textNormal)",
-      }}
-    >
+    <section className={styles.section}>
       <div className={styles.underline}></div>
       <Title title={title} />
       {subTitle && <h4 className={styles.subtitle}>Latest Articles</h4>}
