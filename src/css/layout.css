@@ -169,7 +169,7 @@ p {
 }
 /* -------------------------------------------------------- */
 /* DARK MODE */
-body.dark {
+/* body.dark {
   background-color: #222831;
   color: #999898;
   -webkit-font-smoothing: antialiased;
@@ -177,20 +177,19 @@ body.dark {
   --bg4: #171b22;
   --boxbg: #30475e;
   --textNormal: #d3d3d3;
-  /* animation-delay: 0.5ms; */
   box-sizing: border-box;
-}
+} */
 
 /* NAVBAR */
 
-body.dark #navbarDark {
+/* body.dark #navbarDark {
   background-color: var(--bg);
   color: var(--textNormal);
   transition: all 0.3s linear;
-}
+} */
 
 /* hero */
-
+/* 
 body.dark #herodark {
   background-color: var(--bg4);
   color: var(--textNormal);
@@ -285,4 +284,4 @@ body.dark #aboutPageDark {
 }
 body.dark #aboutPageDark p {
   color: #999898;
-}
+} */
