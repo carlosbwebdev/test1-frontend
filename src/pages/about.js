@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import styles from "../css/about.module.css";
 import Title from "../components/title";
 import ReactMarkdown from "react-markdown";
+import Skills from "../components/skills";
 
 // import Image from "gatsby-image";
 
@@ -34,8 +35,9 @@ const about = ({
           <article className={styles.aboutText}>
             <div className={styles.underline}></div>
             <Title title={title} className={styles.title} />
-            <ReactMarkdown source={description} />
+            <ReactMarkdown source={description} className={styles.desc} />
           </article>
+          <Skills className={styles.skills} />
         </div>
       </section>
     </Layout>
