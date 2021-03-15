@@ -1,10 +1,9 @@
 .section {
-  padding-bottom: 4rem;
-  padding-top: 0.1rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
-  /* background: var(--clr-bg-1); */
 }
 
 .underline {
@@ -24,7 +23,7 @@
 .sectionCenter {
   display: grid;
   margin: auto;
-  grid-template-columns: repeat(3, 4.5rem);
+  grid-template-columns: repeat(2, 4.5rem);
   grid-gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -34,15 +33,19 @@
 .logo {
   display: grid;
   grid-gap: 0.5rem;
+  color: var(--clr-primary-1);
+  font-weight: 600;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
 @media screen and (min-width: 768px) {
   .section {
-    padding-bottom: 4rem;
-    padding-top: 0.1rem;
     width: 95vw;
     margin: 0 auto;
     max-width: 1170px;
+
     /* background: var(--clr-bg-1); */
   }
 
@@ -50,7 +53,7 @@
     display: grid;
     margin: auto;
     width: 80%;
-    grid-template-columns: repeat(3, 6rem);
+    grid-template-columns: repeat(4, 6rem);
     grid-gap: 4rem;
     justify-content: center;
     align-items: center;
