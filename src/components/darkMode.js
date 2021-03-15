@@ -27,7 +27,7 @@ import React from "react";
 import "../css/DarkMode.css";
 
 const DarkMode = () => {
-  if (typeof window !== `undefined`) {
+  if (typeof document !== `undefined`) {
     let clickedClass = "clicked";
     const body = document.body;
     const lightTheme = "light";
