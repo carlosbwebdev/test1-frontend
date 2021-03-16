@@ -1,23 +1,67 @@
 .blogTemplate {
-  padding: 5rem 0;
+  padding: 1rem 0;
   background-color: var(--clr-bg-1);
+  color: var(--clr-primary-1);
+}
+.sectionCenter h2{
+  text-align: center !important;
+}
+.sectionCenter .title{
+  color: blue ;
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .blogTemplate h1,
-.blogTemplate h2 {
-  text-align: center;
+.blogTemplate h2, 
+.blogTemplate h3,
+.blogTemplate h4 {
+  text-align: left;
+  margin-top:2rem ;  
+  margin-bottom:2rem ; 
+  color: #222; 
+  font-weight: 700;
+  font-style: italic;
+}
+
+.blogTemplate h2{
+  font-size: 1.5rem;
+}
+.blogTemplate h2:first-of-type{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  
+}
+.blogTemplate p:first-of-type::first-letter{
+  float: left;
+  margin: 0.07em 0.23em 0px 0px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 4em;
+  line-height: 0.8;
+  color: var(--clr-primary-2);
+}
+
+.blogTemplate p{
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+  font-weight: 600;
 }
 
 .blogTemplate ul {
-  margin-top: 2rem;
-  display: inline-block;
+  list-style:circle;
+  display:inline-block;
 }
 .blogTemplate ul li {
-  background: var(--clr-primary-1);
-  color: var(--clr-primary-2);
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  text-transform: uppercase;
+  list-style:circle;
+  margin-left: 1rem;
+  /* padding: 0.5rem 1rem; */
+  /* margin: 1rem 0; */
+  line-height: 2rem;
+  font-weight: 600;
+
 }
 
 .blogTemplate blockquote {
@@ -44,7 +88,7 @@
 .sectionCenter {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 900px;
 }
 @media screen and (min-width: 992px) {
   .sectionCenter {
