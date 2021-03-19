@@ -4,6 +4,7 @@ import styles from "../css/about.module.css";
 import Title from "../components/title";
 import ReactMarkdown from "react-markdown";
 import Skills from "../components/skills";
+import SEO from "../components/SEO";
 
 // import Image from "gatsby-image";
 
@@ -30,6 +31,7 @@ const about = ({
   const { description, stack, title, image } = nodes[0];
   return (
     <Layout>
+      <SEO title="About" />
       <section className={styles.aboutPage} id="aboutPageDark">
         <div className={`${styles.sectionCenter} ${styles.aboutCenter}`}>
           <article className={styles.aboutText}>

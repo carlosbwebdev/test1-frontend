@@ -3,6 +3,8 @@ import Layout from "../components/layout";
 import Projects from "../components/projects";
 import styles from "../css/projects-page.module.css";
 import { graphql } from "gatsby";
+import SEO from "../components/SEO";
+
 export const query = graphql`
   {
     allStrapiProjects {
@@ -30,6 +32,7 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
+      <SEO title="Projects" />
       <section className={styles.projectsPage} id="projectDarkPage">
         <Projects projects={projects} title="Projects" id="opa" />
       </section>
