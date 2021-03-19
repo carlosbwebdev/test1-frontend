@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "developedByCarlos Website",
-    author: "@CarlosBarros",
+    author: "@Carlos_webdev",
     contact: "carlosbwebdev@gmail.com",
     description:
       "Freelance web designer and developer, based in the north of portugal",
@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-dark-mode",
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
