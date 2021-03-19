@@ -32,7 +32,7 @@
   font-style: italic;
 }
 
-.blogTemplate p:first-of-type::first-letter {
+/* .blogTemplate p:first-of-type::first-letter {
   float: left;
   margin: 0.07em 0.23em 0px 0px;
   text-transform: uppercase;
@@ -40,7 +40,7 @@
   font-size: 4em;
   line-height: 0.8;
   color: var(--clr-primary-2);
-}
+} */
 
 .blogTemplate p {
   font-size: 1rem;

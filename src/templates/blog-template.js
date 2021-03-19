@@ -25,7 +25,7 @@ const BlogTemplate = ({ data }) => {
   const { content, title, desc, slug, id } = data.blog;
   let gitalkConfig = {
     id: slug || id,
-    title: title,
+    title: frontmatter.title,
   };
   return (
     <Layout>
