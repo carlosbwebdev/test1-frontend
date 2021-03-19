@@ -5,10 +5,8 @@ import styles from "../css/blog-template.module.css";
 import ReactMarkdown from "react-markdown";
 import Title from "../components/title";
 import SEO from "../components/SEO";
-// import Comment from "../components/comment";
-// import Gitalk from "gatsby-plugin-gitalk";
-// import "@suziwen/gitalk/dist/gitalk.css";
-import { Disqus, CommentCount } from "gatsby-plugin-disqus";
+import Gitalk from "gatsby-plugin-gitalk";
+import "../css/gitalk.css";
 
 export const query = graphql`
   query GetSingleBlog($slug: String) {
@@ -24,15 +22,11 @@ export const query = graphql`
 
 const BlogTemplate = ({ data }) => {
   const { content, title, desc, slug, id } = data.blog;
-  // let gitalkConfig = {
-  //   id: slug || id,
-  //   title: title,
-  // };
-  let disqusConfig = {
-    url: `${slug + location.pathname}`,
-    identifier: id,
+  let gitalkConfig = {
+    id: slug || id,
     title: title,
   };
+
   return (
     <Layout>
       <SEO title={title} description={desc} />
@@ -41,16 +35,10 @@ const BlogTemplate = ({ data }) => {
         <div className={styles.underline}></div>
         <div className={styles.sectionCenter}>
           <article className={styles.blogContent}>
-            <CommentCount config={disqusConfig} placeholder={"..."} />
             <ReactMarkdown source={content} />
-            <Disqus config={disqusConfig} />
+            <Gitalk options={gitalkConfig} />
           </article>
-          {/* <Disqus
-            identifier={id}
-            title={title}
-            url={`${siteUrl}${location.pathname}`}
-          /> */}
-          {/* <Gitalk options={gitalkConfig} /> */}
+
           <Link to="/blog" className={`${styles.btn} ${styles.centerBtn}`}>
             blog
           </Link>
