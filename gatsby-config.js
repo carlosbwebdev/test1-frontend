@@ -4,7 +4,7 @@ module.exports = {
     author: "@CarlosBarros",
     contact: "carlosbwebdev@gmail.com",
     description:
-      "Freelance web designer and developer, based in north of portugal",
+      "Freelance web designer and developer, based in the north of portugal",
     siteUrl: "https://developedbycarlos.netlify.app",
     image: "/twitter-card.png",
     twitterUsername: "@Carlos_webdev",
