@@ -5,6 +5,9 @@ import styles from "../css/blog-template.module.css";
 import ReactMarkdown from "react-markdown";
 import Title from "../components/title";
 import SEO from "../components/SEO";
+// import Comment from "../components/comment";
+import Gitalk from "gatsby-plugin-gitalk";
+import "@suziwen/gitalk/dist/gitalk.css";
 
 export const query = graphql`
   query GetSingleBlog($slug: String) {
@@ -12,13 +15,18 @@ export const query = graphql`
       content
       title
       desc
+      slug
+      id
     }
   }
 `;
 
 const BlogTemplate = ({ data }) => {
-  const { content, title, desc } = data.blog;
-
+  const { content, title, desc, slug, id } = data.blog;
+  let gitalkConfig = {
+    id: slug || id,
+    title: title,
+  };
   return (
     <Layout>
       <SEO title={title} description={desc} />
@@ -29,6 +37,7 @@ const BlogTemplate = ({ data }) => {
           <article className={styles.blogContent}>
             <ReactMarkdown source={content} />
           </article>
+          <Gitalk options={gitalkConfig} />
           <Link to="/blog" className={`${styles.btn} ${styles.centerBtn}`}>
             blog
           </Link>
