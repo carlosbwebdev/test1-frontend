@@ -36,6 +36,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gitalk`,
+      options: {
+        config: {
+          clientID: "b7d23769c506d7fd8178",
+          clientSecret: "b40d7c4a81299a55150aee6c5480e4b281668e5f",
+          repo: "test1-frontend",
+          owner: "carlosbwebdev",
+          admin: ["carlosbwebdev"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
