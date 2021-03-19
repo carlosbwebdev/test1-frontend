@@ -31,6 +31,7 @@
 .blogCard h4 {
   color: var(--clr-primary-2);
   font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
 .blogFooter {

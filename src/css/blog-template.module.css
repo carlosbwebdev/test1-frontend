@@ -3,37 +3,36 @@
   background-color: var(--clr-bg-1);
   color: var(--clr-primary-1);
 }
-.sectionCenter h2{
+.sectionCenter h2 {
   text-align: center !important;
 }
-.sectionCenter .title{
-  color: blue ;
-  font-size: 4rem;
+.blogTemplate h2 {
+  font-size: 1.8rem;
+  color: var(--clr-primary-2);
   font-weight: 700;
   font-style: italic;
+  text-align: cent;
+}
+.blogTemplate h3 {
+  font-size: 1.4rem;
+}
+
+.blogTemplate h4 {
+  font-size: 1.4rem;
 }
 
 .blogTemplate h1,
-.blogTemplate h2, 
 .blogTemplate h3,
 .blogTemplate h4 {
   text-align: left;
-  margin-top:2rem ;  
-  margin-bottom:2rem ; 
-  color: #222; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
   font-weight: 700;
   font-style: italic;
 }
 
-.blogTemplate h2{
-  font-size: 1.5rem;
-}
-.blogTemplate h2:first-of-type{
-  font-size: 1.1rem;
-  line-height: 2rem;
-  
-}
-.blogTemplate p:first-of-type::first-letter{
+.blogTemplate p:first-of-type::first-letter {
   float: left;
   margin: 0.07em 0.23em 0px 0px;
   text-transform: uppercase;
@@ -43,7 +42,7 @@
   color: var(--clr-primary-2);
 }
 
-.blogTemplate p{
+.blogTemplate p {
   font-size: 1rem;
   line-height: 2rem;
   text-align: justify;
@@ -51,17 +50,16 @@
 }
 
 .blogTemplate ul {
-  list-style:circle;
-  display:inline-block;
+  list-style: circle;
+  display: inline-block;
 }
 .blogTemplate ul li {
-  list-style:circle;
+  list-style: circle;
   margin-left: 1rem;
   /* padding: 0.5rem 1rem; */
   /* margin: 1rem 0; */
   line-height: 2rem;
   font-weight: 600;
-
 }
 
 .blogTemplate blockquote {
