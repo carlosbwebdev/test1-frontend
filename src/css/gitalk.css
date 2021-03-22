@@ -717,6 +717,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
+  margin-top: 5rem;
+  /* background: #fff; */
   /* loader */
   /* error */
   /* initing */
@@ -732,9 +734,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.gt-container a {
+/* .gt-container a {
   color: #6190e8;
-}
+} */
 .gt-container a:hover {
   color: #81a6ed;
   border-color: #81a6ed;
@@ -755,7 +757,7 @@
   height: 1em;
   vertical-align: sub;
 }
-.gt-container .gt-svg svg {
+.gt-container .gt-svg {
   width: 100%;
   height: 100%;
   fill: var(--clr-primary-1);
@@ -766,6 +768,7 @@
 .gt-container .gt-ico-text {
   margin-left: 0.3125em;
   color: var(--clr-primary-1);
+  display: none;
 }
 .gt-container .gt-ico-github {
   width: 100%;
@@ -916,11 +919,12 @@
   text-align: center;
 }
 .gt-container .gt-link {
-  border-bottom: 1px dotted #6190e8;
+  border-bottom: 1px dotted var(--clr-primary-2);
 }
 .gt-container .gt-link-counts,
 .gt-container .gt-link-project {
   text-decoration: none;
+  color: var(--clr-primary-2);
 }
 .gt-container .gt-meta {
   margin: 1.25em 0;
@@ -942,6 +946,7 @@
 .gt-container .gt-counts {
   margin: 0 0.625em 0 0;
 }
+
 .gt-container .gt-user {
   float: right;
   margin: 0;
@@ -956,6 +961,7 @@
 .gt-container .gt-user-inner {
   display: inline-block;
   cursor: pointer;
+  /* display: none; */
 }
 .gt-container .gt-user .gt-ico {
   margin: 0 0 0 0.3125em;
@@ -964,7 +970,7 @@
   fill: inherit;
 }
 .gt-container .gt-user .is--poping .gt-ico svg {
-  fill: #6190e8;
+  fill: var(--clr-primary-2);
 }
 .gt-container .gt-version {
   color: #a1a1a1;
@@ -993,12 +999,13 @@
   padding: 0 1.125em;
   position: relative;
   text-decoration: none;
+  color: var(--clr-primary-2);
 }
 .gt-container .gt-popup .gt-action.is--active:before {
   content: "";
   width: 0.25em;
   height: 0.25em;
-  background: #6190e8;
+  background: var(--clr-primary-2);
   position: absolute;
   left: 0.5em;
   top: 0.4375em;
@@ -1051,6 +1058,7 @@
   position: relative;
   margin: 0.75em 0 0;
 }
+
 .gt-container .gt-header-controls:before,
 .gt-container .gt-header-controls:after {
   content: " ";
