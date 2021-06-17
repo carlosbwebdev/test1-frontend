@@ -15,17 +15,17 @@ const data = [
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/carlos-barros-89806a206/",
   },
   {
     id: 3,
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/Carlos_webdev",
   },
   {
     id: 4,
     icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
-    url: "https://www.github.com",
+    url: "https://github.com/carlosbwebdev",
   },
 ];
 const links = data.map((link) => {

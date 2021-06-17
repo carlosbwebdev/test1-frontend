@@ -9,12 +9,12 @@ const Contact = () => {
       <SEO title="Contact" />
       <section className={styles.contactPage}>
         <article className={styles.contactForm}>
-          <h3>Contact me</h3>
+          <h3>Contacta-me</h3>
           <form action="https://formspree.io/f/xqkgvnzn" method="POST">
             <div className={styles.formGroup}>
               <input
                 type="text"
-                placeholder="name"
+                placeholder="nome"
                 name="name"
                 className={styles.formControl}
               />
@@ -28,7 +28,7 @@ const Contact = () => {
                 name="message"
                 id=""
                 rows="5"
-                placeholder="message"
+                placeholder="mensagem"
                 name="message"
                 className={styles.formControl}
               ></textarea>
@@ -37,7 +37,7 @@ const Contact = () => {
               type="submit"
               className={`${styles.submitBtn} ${styles.btn} `}
             >
-              submit here
+              enviar
             </button>
           </form>
         </article>

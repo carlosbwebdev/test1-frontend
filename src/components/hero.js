@@ -30,13 +30,13 @@ const Hero = () => {
         <article className={styles.heroInfo}>
           <div>
             <div className={styles.underline}></div>
-            <h1>i am Carlos!</h1>
+            <h1>Olá eu sou o Carlos!</h1>
             <h4 id="heroinfo">
-              freelance web designer and developer, based in the north of
-              portugal
+              Freelancer em Desenvolvimento Web, Desenvolvo Websites
+              Profissionais com Extrema Paixão e Profissionalismo.
             </h4>
             <Link to="/contact" className={styles.btn} id="btnDarkHover">
-              contact me
+              contacta-me
             </Link>
             <SocialLinks />
           </div>

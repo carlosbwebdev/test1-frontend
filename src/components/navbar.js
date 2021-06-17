@@ -10,7 +10,7 @@ const Navbar = ({ toggleSidebar }) => {
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
           <a href="/">
-            <h1>developedByCarlos</h1>
+            <h1>DevelopedByCarlos</h1>
           </a>
           <button
             type="button"
@@ -22,7 +22,6 @@ const Navbar = ({ toggleSidebar }) => {
         </div>
         <PageLinks styleClass={styles.navLinks}></PageLinks>
       </div>
-      {/* <DarkMode styleClass={styles.darkModeBtn} /> */}
     </nav>
   );
 };

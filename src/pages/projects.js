@@ -32,9 +32,9 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="Projectos" />
       <section className={styles.projectsPage} id="projectDarkPage">
-        <Projects projects={projects} title="Projects" id="opa" />
+        <Projects projects={projects} title="Projectos" id="opa" />
       </section>
     </Layout>
   );

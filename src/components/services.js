@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section className={`styles.section ${styles.bgGrey}`}>
       <div className={styles.underline}></div>
-      <Title title="services" className={styles.titleUnderline} />
+      <Title title="Serviços" className={styles.titleUnderline} />
 
       <div className={`styles.sectioCenter ${styles.servicesCenter}`}>
         {services.map((service) => {

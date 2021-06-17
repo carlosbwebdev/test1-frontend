@@ -28,7 +28,7 @@ const Skills = () => {
   return (
     <div className={styles.section}>
       <div className={styles.underline}></div>
-      <Title title="Skills" />
+      <Title title="skills" />
       <section className={styles.sectionCenter}>
         {data.allFile.edges.map((images) => {
           return (

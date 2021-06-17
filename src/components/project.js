@@ -14,10 +14,10 @@ const Project = ({ title, image, id, github, url }) => {
         <div className={styles.text}>
           <span>{title}</span>
           <a className={styles.boxLink} href={url}>
-            See live!
+            ir para...
           </a>
           <a className={styles.boxLink} href={github}>
-            github repo
+            repositorio github
           </a>
         </div>
       </div>

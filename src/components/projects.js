@@ -10,7 +10,7 @@ export const Projects = ({ projects, title, subTitle, showLink }) => {
     <div className={styles.section}>
       <div className={styles.underline}></div>
       <Title title={title} />
-      {subTitle && <h4 className={styles.subtitle}>Featured Projects</h4>}
+      {subTitle && <h4 className={styles.subtitle}>Projectos em Destaque</h4>}
 
       <div className={`${styles.sectionCenter} ${styles.projectsCenter}`}>
         {projects.map((project) => {
@@ -19,7 +19,7 @@ export const Projects = ({ projects, title, subTitle, showLink }) => {
       </div>
       {showLink && (
         <Link to="/projects/" className={`${styles.btn} ${styles.centerBtn}`}>
-          projects
+          projectos
         </Link>
       )}
     </div>
