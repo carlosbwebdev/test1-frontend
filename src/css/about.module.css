@@ -16,7 +16,7 @@
   opacity: 0.7;
   position: absolute;
   right: 50%;
-  --translateX: -4.5rem;
+  --translateX: -5.4rem;
   --translateY: 4rem;
   --rotate: 0deg;
   transform: translateX(var(--translateX)) translateY(var(--translateY))

@@ -20,7 +20,7 @@
   position: absolute;
   z-index: 0;
   --translateX: -0.7rem;
-  --translateY: -0.5rem;
+  --translateY: 0rem;
   --rotate: 0deg;
   transform: translateX(var(--translateX)) translateY(var(--translateY))
     rotate(var(--rotate));
@@ -28,9 +28,10 @@
 .heroCenter h1 {
   position: relative;
   z-index: 1;
-  font-size: 3.9rem;
+  font-size: 3.5rem;
   font-style: italic;
   text-align: unset;
+  text-transform: none;
 }
 
 .heroImg {
@@ -41,7 +42,10 @@
 
 .heroInfo h4 {
   color: var(--clr-primary-1);
+  opacity: 0.8;
   line-height: 1.5rem !important;
+  font-size: 1rem;
+  text-transform: none;
 }
 .heroIcons {
   justify-items: flex-start;
@@ -90,6 +94,9 @@
       rotate(var(--rotate));
     margin-left: auto;
   }
+  /* .heroCenter h1 {
+    font-size: 2rem;
+  } */
 }
 
 @media screen and (min-width: 992px) {
@@ -107,7 +114,7 @@
   }
 
   .hero h4 {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .heroInfo {
     grid-row: 1/1;

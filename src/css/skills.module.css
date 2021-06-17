@@ -14,7 +14,7 @@
   position: absolute;
   right: 50%;
   --translateX: -2.2rem;
-  --translateY: 4.3rem;
+  --translateY: 4rem;
   --rotate: 0deg;
   transform: translateX(var(--translateX)) translateY(var(--translateY))
     rotate(var(--rotate));
